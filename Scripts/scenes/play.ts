@@ -31,13 +31,13 @@ module scenes {
             this._die1Label = new objects.Label(
                 "Dice1", "20px Consolas",
                 "#000000",
-                325, 225);
+                225, 225);
             this.addChild(this._die1Label);
 
             this._die2Label = new objects.Label(
                 "Dice2", "20px Consolas",
                 "#000000",
-                525, 225);
+                425, 225);
             this.addChild(this._die2Label);
 
             this._initializeBitmapArray();

@@ -22,9 +22,9 @@ var scenes;
             this.addChild(this._rollButton);
             this._rollButton.on("click", this._rollButtonClick, this);
             //Add Play Label
-            this._die1Label = new objects.Label("Dice1", "20px Consolas", "#000000", 275, 225);
+            this._die1Label = new objects.Label("Dice1", "20px Consolas", "#000000", 225, 225);
             this.addChild(this._die1Label);
-            this._die2Label = new objects.Label("Dice1", "20px Consolas", "#000000", 475, 225);
+            this._die2Label = new objects.Label("Dice2", "20px Consolas", "#000000", 425, 225);
             this.addChild(this._die2Label);
             this._initializeBitmapArray();
             // add this scene to the global stage container
@@ -65,7 +65,7 @@ var scenes;
             this._rolls = new Array();
             for (var roll = 0; roll < 2; roll++) {
                 this._rolls[roll] = new createjs.Bitmap(assets.getResult("Dice1"));
-                this._rolls[roll].x = 150 + (roll * 200);
+                this._rolls[roll].x = 200 + (roll * 200);
                 this._rolls[roll].y = 100;
                 this.addChild(this._rolls[roll]);
                 console.log("roll" + roll + " " + this._rolls[roll]);
