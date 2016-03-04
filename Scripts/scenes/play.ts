@@ -29,13 +29,13 @@ module scenes {
 
             //Add Play Label
             this._die1Label = new objects.Label(
-                "Dice1", "20px Consolas",
+                "1", "20px Consolas",
                 "#000000",
                 225, 225);
             this.addChild(this._die1Label);
 
             this._die2Label = new objects.Label(
-                "Dice2", "20px Consolas",
+                "1", "20px Consolas",
                 "#000000",
                 425, 225);
             this.addChild(this._die2Label);
@@ -59,22 +59,22 @@ module scenes {
                 outCome[roll] = Math.floor((Math.random() * 6) + 1);
                 switch (outCome[roll]) {
                     case 1:
-                        diceLine[roll] = "Dice1";
+                        diceLine[roll] = "1";
                         break;
                     case 2:
-                        diceLine[roll] = "Dice2";
+                        diceLine[roll] = "2";
                         break
                     case 3:
-                        diceLine[roll] = "Dice3";
+                        diceLine[roll] = "3";
                         break
                     case 4:
-                        diceLine[roll] = "Dice4";
+                        diceLine[roll] = "4";
                         break
                     case 5:
-                        diceLine[roll] = "Dice5";
+                        diceLine[roll] = "5";
                         break
                     case 6:
-                        diceLine[roll] = "Dice6";
+                        diceLine[roll] = "6";
                         break
                 }
             }
@@ -84,7 +84,7 @@ module scenes {
         private _initializeBitmapArray(): void {
             this._rolls = new Array<createjs.Bitmap>();
             for (var roll: number = 0; roll < 2; roll++) {
-                this._rolls[roll] = new createjs.Bitmap(assets.getResult("Dice1"));
+                this._rolls[roll] = new createjs.Bitmap(assets.getResult("1"));
                 this._rolls[roll].x = 200 + (roll * 200);
                 this._rolls[roll].y = 100;
                 this.addChild(this._rolls[roll]);
