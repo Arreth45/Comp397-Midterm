@@ -1,5 +1,9 @@
 ﻿/// <reference path = "_reference.ts" />
 
+//Game.ts
+//Jacob Parnell
+// 04/03/2016
+
 // global variables
 var assets: createjs.LoadQueue;
 var canvas: HTMLElement;
@@ -17,8 +21,14 @@ var end: scenes.End;
 var assetData:objects.Asset[] = [
     // Add your Assets here
     {id: "StartButton", src:"../../Assets/images/StartButton.png"},
-    {id: "StartOverButton", src:"../../Assets/images/StartOverButton.png"}
-
+    {id: "StartOverButton", src:"../../Assets/images/StartOverButton.png"},
+    {id: "RollButton", src:"../../Assets/images/Roll.png"},
+    {id: "Dice1", src:"../../Assets/images/dice-1.png"},
+    {id: "Dice2", src:"../../Assets/images/dice-2.png"},
+    {id: "Dice3", src:"../../Assets/images/dice-3.png"},
+    {id: "Dice4", src:"../../Assets/images/dice-4.png"},
+    {id: "Dice5", src:"../../Assets/images/dice-5.png"},
+    {id: "Dice6", src:"../../Assets/images/dice-6.png"}
 ];
 
 function preload() {
